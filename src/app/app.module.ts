@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }  from './app.component';
 
 import { CoursesComponent } from './courses.component';
+import { AuthorComponent} from './author.component';
 
 @NgModule({
   imports:      [
@@ -11,7 +12,8 @@ import { CoursesComponent } from './courses.component';
   ],
   declarations: [
     AppComponent,
-    CoursesComponent
+    CoursesComponent,
+    AuthorComponent
   ],
   bootstrap:    [
     AppComponent

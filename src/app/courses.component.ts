@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 
 import { CourseService } from './course.service';
+import {AutoGrowDirective} from "./auto-grow.directive";
 
 @Component ({
   selector: 'courses',
   templateUrl: './courses.component.html',
   providers: [
     CourseService
-  ]
-
+  ],
 })
 
 

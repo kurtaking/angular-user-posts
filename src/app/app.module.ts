@@ -6,6 +6,7 @@ import { AppComponent }  from './app.component';
 import { CoursesComponent } from './courses.component';
 import { AuthorComponent} from './author.component';
 import { MessagesComponent } from './messages.component'
+import {AutoGrowDirective} from "./auto-grow.directive";
 
 @NgModule({
   imports:      [
@@ -15,7 +16,8 @@ import { MessagesComponent } from './messages.component'
     AppComponent,
     CoursesComponent,
     AuthorComponent,
-    MessagesComponent
+    MessagesComponent,
+    AutoGrowDirective
   ],
   bootstrap:    [
     AppComponent

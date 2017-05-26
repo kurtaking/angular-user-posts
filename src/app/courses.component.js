@@ -24,7 +24,7 @@ CoursesComponent = __decorate([
         templateUrl: './courses.component.html',
         providers: [
             course_service_1.CourseService
-        ]
+        ],
     }),
     __metadata("design:paramtypes", [course_service_1.CourseService])
 ], CoursesComponent);

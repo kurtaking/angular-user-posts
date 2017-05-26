@@ -13,7 +13,7 @@ import { CourseService } from './course.service';
 
 
 export class CoursesComponent {
-  title = 'The titlt of courses page';
+  title = 'The title of courses section';
   courses = this.courseService.getCourses();
 
   constructor(

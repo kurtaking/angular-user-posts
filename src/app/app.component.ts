@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent  {
-  name = 'Angular';
+  title = 'An example Angular App with Courses, Authors, and Messages';
 }

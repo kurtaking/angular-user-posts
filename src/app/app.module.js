@@ -10,6 +10,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var courses_component_1 = require("./courses.component");
 var author_component_1 = require("./author.component");
+var messages_component_1 = require("./messages.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -23,7 +24,8 @@ AppModule = __decorate([
         declarations: [
             app_component_1.AppComponent,
             courses_component_1.CoursesComponent,
-            author_component_1.AuthorComponent
+            author_component_1.AuthorComponent,
+            messages_component_1.MessagesComponent
         ],
         bootstrap: [
             app_component_1.AppComponent

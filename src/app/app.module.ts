@@ -5,6 +5,7 @@ import { AppComponent }  from './app.component';
 
 import { CoursesComponent } from './courses.component';
 import { AuthorComponent} from './author.component';
+import { MessagesComponent } from './messages.component'
 
 @NgModule({
   imports:      [
@@ -13,7 +14,8 @@ import { AuthorComponent} from './author.component';
   declarations: [
     AppComponent,
     CoursesComponent,
-    AuthorComponent
+    AuthorComponent,
+    MessagesComponent
   ],
   bootstrap:    [
     AppComponent

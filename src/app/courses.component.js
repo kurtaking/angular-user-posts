@@ -13,7 +13,7 @@ var course_service_1 = require("./course.service");
 var CoursesComponent = (function () {
     function CoursesComponent(courseService) {
         this.courseService = courseService;
-        this.title = 'The titlt of courses page';
+        this.title = 'The title of courses section';
         this.courses = this.courseService.getCourses();
     }
     return CoursesComponent;

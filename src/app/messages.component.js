@@ -9,24 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var author_service_1 = require("./author.service");
-var AuthorComponent = (function () {
-    function AuthorComponent(authorService) {
-        this.authorService = authorService;
-        this.title = 'Title for the authors section';
-        this.authors = this.authorService.getAuthors();
+var messages_service_1 = require("./messages.service");
+var MessagesComponent = (function () {
+    function MessagesComponent(messagesService) {
+        this.messagesService = messagesService;
+        this.title = 'Title for the messages section';
+        this.messages = this.messagesService.getMessages();
     }
-    return AuthorComponent;
+    return MessagesComponent;
 }());
-AuthorComponent = __decorate([
+MessagesComponent = __decorate([
     core_1.Component({
-        selector: 'authors',
-        templateUrl: './author.component.html',
+        selector: 'messages',
+        templateUrl: './messages.component.html',
         providers: [
-            author_service_1.AuthorService
+            messages_service_1.MessagesService
         ]
     }),
-    __metadata("design:paramtypes", [author_service_1.AuthorService])
-], AuthorComponent);
-exports.AuthorComponent = AuthorComponent;
-//# sourceMappingURL=author.component.js.map
+    __metadata("design:paramtypes", [messages_service_1.MessagesService])
+], MessagesComponent);
+exports.MessagesComponent = MessagesComponent;
+//# sourceMappingURL=messages.component.js.map

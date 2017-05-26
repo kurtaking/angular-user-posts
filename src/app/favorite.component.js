@@ -6,18 +6,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'An example Angular App with Courses, Authors, and Messages';
-        this.writtenByAuthor = 'Kurt King';
+var FavoriteComponent = (function () {
+    function FavoriteComponent() {
+        this.isFavorite = false;
     }
-    return AppComponent;
+    FavoriteComponent.prototype.onClick = function () {
+        this.isFavorite = !this.isFavorite;
+    };
+    return FavoriteComponent;
 }());
-AppComponent = __decorate([
+FavoriteComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        templateUrl: './app.component.html',
+        selector: 'favorite',
+        template: "<i class=\"fa\" [class.fa-star-o]=\"!isFavorite\" [class.fa-star]=\"isFavorite\" (click)=\"onClick()\"></i>"
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], FavoriteComponent);
+exports.FavoriteComponent = FavoriteComponent;
+//# sourceMappingURL=favorite.component.js.map
